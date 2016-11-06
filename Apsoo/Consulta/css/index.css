@@ -1,0 +1,34 @@
+@CHARSET "ISO-8859-1";
+
+
+#div_pri{
+	height: 650px;
+	
+	margin-top: 0% !important;
+	margin-bottom: auto;
+
+}
+
+
+#menu{
+	height: 250px;
+
+	margin-top: 11%;
+}
+#barra_navegacao{
+	border-bottom: 3px solid #3b5998;
+}
+
+#conteudo{
+	min-height:205px;
+	background: #eee; 
+	
+	
+}
+
+#pag_inter_nav{
+	background:#eee; }
+
+#nav-tabs-background{
+	background-color: 286090;
+}

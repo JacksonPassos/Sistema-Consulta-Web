@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+
+#div_pri{
+	height: 300px;
+	
+	margin-top: 15% !important;
+	margin-bottom: auto;
+	
+}
+
+#divlogin{
+	
+	height: 300px;
+	
+}
+
+#menu{
+	height: 250px;
+	
+	margin-top: 2.5%;
+}
+
+#conteudo{
+	min-height:205px;
+	background-color: #eee;
+}
