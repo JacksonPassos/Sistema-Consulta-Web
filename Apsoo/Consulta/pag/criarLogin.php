@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<?php 
+include '../script/ConBanco.php';
+conectaBaco();
+?>
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,7 +70,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
             <legend> Registre-se!</legend>
-            <form action="#" method="post" class="form" role="form">
+            <form action="../script/cadUser.php" method="post" class="form" role="form">
                 <div class="row">
                     <div class="col-xs-6 col-md-6">
                         <input class="form-control" name="firstname" placeholder="Primeiro Nome" type="text"
@@ -78,19 +83,20 @@
                 <input class="form-control" name="youremail" placeholder="Seu email" type="email" />
                 <input class="form-control" name="reenteremail" placeholder="Confirme seu email" type="email" />
                 <input class="form-control" name="cpf" placeholder="Informe seu CPF" />
+                <input class="form-control" name="carteira" placeholder="Informe numero da carteira do plano" />
                 <input class="form-control" name="password" placeholder="Senha" type="password" />
                 <input class="form-control" name="password" placeholder="Confirmar senha" type="password" />
                 <label for="">
                     Data de Nascimento</label>
                 <div class="row">
                     <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
+                        <select class="form-control" name="dia">
                             <option>Dia</option>
                             <?php for($i=1; $i<=31; $i++){ echo "<option value='$i'>$i</option>";} ?>
                         </select>
                     </div>
                     <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
+                        <select class="form-control" name="mes">
                             <option>Mês</option>
                             <option value="Janeiro">Janeiro</option>
                             <option value="Fevereiro">Fevereiro</option>
@@ -107,7 +113,7 @@
                         </select>
                     </div>
                     <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
+                        <select class="form-control" name="ano">
                             <option>Ano</option>
                             <?php $year = date("Y"); while ($year > 1899) {
                             echo '<option value="'.$year.'">'.$year.'</option>';
