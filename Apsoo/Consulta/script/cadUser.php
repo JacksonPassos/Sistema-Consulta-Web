@@ -1,4 +1,9 @@
 <?php
+$password 		= $_POST['password'];
+$criptografada = crypt($password);
+
+
+
 include 'Conbanco.php';
 conectaBaco();
 $firstname 		= $_POST['firstname'];
@@ -7,7 +12,7 @@ $youremail 		= $_POST['youremail'];
 $reenteremail 	= $_POST['reenteremail'];
 $cpf 			= $_POST['cpf'];
 $carteira		= $_POST['carteira'];
-$password 		= $_POST['password'];
+$password 		=	$criptografada;
 $dia 			= $_POST['dia'];
 $mes 			= $_POST['mes'];
 $ano 			= $_POST['ano'];
@@ -36,9 +41,14 @@ $query = "INSERT INTO `usuarios`(
 		";
 
 $inserir = mysql_query($query);
-
 if ($inserir){
-	echo "dados inserirdos";
+	header("location:../pag/criarLogin.php?msg=1");
+ }else {
+ echo "erro";
+ }
+
+/*if ($inserir){
+	header('../pag/criarLogin.php?msg=1');
 }else {
-	echo "erro";
+	header('../pag/criarLogin.php?msg=2');
 }

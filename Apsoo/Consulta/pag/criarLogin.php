@@ -5,6 +5,7 @@
 <?php 
 include '../script/ConBanco.php';
 conectaBaco();
+
 ?>
     <meta charset="utf-8">
 
@@ -98,18 +99,18 @@ conectaBaco();
                     <div class="col-xs-4 col-md-4">
                         <select class="form-control" name="mes">
                             <option>Mês</option>
-                            <option value="Janeiro">Janeiro</option>
-                            <option value="Fevereiro">Fevereiro</option>
-                            <option value="Março">Março</option>
-                            <option value="Abril">Abril</option>
-                            <option value="Maio">Maio</option>
-                            <option value="Junho">Junho</option>
-                            <option value="Julho">Julho</option>
-                            <option value="Agosto">Agosto</option>
-                            <option value="Setembro">Setembro</option>
-                            <option value="Outubro">Outubro</option>
-                            <option value="Novembro">Novembro</option>
-                            <option value="Dezembro">Dezembro</option>
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
                         </select>
                     </div>
                     <div class="col-xs-4 col-md-4">
@@ -135,6 +136,7 @@ conectaBaco();
                 <button class="btn btn-lg btn-primary btn-block" type="submit">
                     Cadastrar</button>
             </form>
+            
         </div>
     </div>
 </div>
