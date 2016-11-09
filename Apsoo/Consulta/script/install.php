@@ -1,4 +1,4 @@
-<?php
+<?php/*
 CREATE TABLE 
 `med_system_db`.`usuarios` 
 		( 
@@ -13,3 +13,6 @@ CREATE TABLE
 				`dnascimento` VARCHAR(15) NOT NULL , 
 				PRIMARY KEY (`id`)
 		) ENGINE = InnoDB;
+
+		insert
+		INSERT INTO `exame_medicos`(`exames`) VALUES ("Angiografia cerebral");*/
