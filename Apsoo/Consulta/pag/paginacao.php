@@ -12,7 +12,7 @@ switch ($cod){
 		include 'formnumerocpf.html';
 		break;
 	case '103';
-		include 'criarLogin.html';
+		include 'criarLogin.php';
 		break;
 	case '104';
 		include 'recuperarSenha.html';

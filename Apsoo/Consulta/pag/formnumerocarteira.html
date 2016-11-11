@@ -1,27 +1,36 @@
 <html>
 <head></head>
 <body>
-	<div class="row form-group">
-		<form id="formCpfLogin" data-toggle="validator" role="form" action="script/validaLogin.php" method="post">
+	<div class="row form-group" id="pag_inter_nav"
+		style="border-left: solid 2px #286090; border-right: solid 2px #286090; border-bottom: solid 2px #286090;">
+		<form id="formCpfLogin" data-toggle="validator" role="form"
+			action="script/validaLogin.php" method="post"
+			style="margin-bottom: 4px;">
 			<div class="form-group" style="margin: 5px 5px;">
-				<label for="inputEmail" class="control-label" >Numero da Carteira</label> <input
-					name="inputCarteira" id="inputCarteira" class="form-control"
+				<label for="inputEmail" class="control-label">Numero da
+					Carteira</label> <input name="inputCarteira" id="inputCarteira"
+					class="form-control"
 					placeholder="Digite o numero da Carteira do plano" type="text"
-					data-error="Por favor, informe o numero da carteira sem pontos e tra�os." required>
+					data-error="Por favor, informe o numero da carteira sem pontos e tra�os."
+					required>
 				<div class="help-block with-errors"></div>
 			</div>
 
 			<div class="form-group" style="margin: 5px 5px;">
-				<label for="inputPassword" class="control-label">Data de Nascimento</label> <input
-					name="dNascimento" type="text" class="form-control" id="dNascimento"
-					placeholder="Digite sua Data de Nascimento" data-minlength="6" required>
-				<span class="help-block"> Sem a utilizacao de barras (/)</span>
+				<label for="inputPassword" class="control-label">Data de
+					Nascimento</label> <input name="dNascimento" type="text"
+					class="form-control" id="dNascimento"
+					placeholder="Digite sua Data de Nascimento" data-minlength="6"
+					required> <span class="help-block"> No seguinte formato 0/00/0000</span>
 			</div>
 
-			<button type="submit" class="btn btn-primary" style="margin-left: 5px;">Entrar</button>
-			<a href="pag/paginacao.php?cod=103"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
-			<a href="pag/paginacao.php?cod=104"><button type="button" class="btn btn-primary">Esqueci minha senha</button></a>
-			<input type=hidden name=form value="2">
+			<button type="submit" class="btn btn-primary"
+				style="margin-left: 5px;">Entrar</button>
+			<a href="pag/paginacao.php?cod=103"><button type="button"
+					class="btn btn-primary">Cadastrar-se</button></a> <a
+				href="pag/paginacao.php?cod=104"><button type="button"
+					class="btn btn-primary">Esqueci minha senha</button></a> <input
+				type=hidden name=form value="2">
 		</form>
 	</div>
 
