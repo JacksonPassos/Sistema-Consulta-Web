@@ -60,79 +60,26 @@
     </ul>
 </nav>
 
+<div class="row">
+    <div id='menu' class="col-md-6 col-md-push-3 ">
+        <ul id="barra_navegacao" class="nav nav-tabs">
+            <li class=""><a
+                    href="telaConsulta.html"> Marcação de Consulta</a>
+            </li>
+            <li class=""><a
+                    onclick="carregar('pag/paginacao.php?cod=106')" >Visualização de Consultas Marcadas</a>
+            </li>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <legend> Registre-se!</legend>
-            <form action="#" method="post" class="form" role="form">
-                <div class="row">
-                    <div class="col-xs-6 col-md-6">
-                        <input class="form-control" name="firstname" placeholder="Primeiro Nome" type="text"
-                               required autofocus />
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                        <input class="form-control" name="lastname" placeholder="Último Nome" type="text" required />
-                    </div>
-                </div>
-                <input class="form-control" name="youremail" placeholder="Seu email" type="email" />
-                <input class="form-control" name="reenteremail" placeholder="Confirme seu email" type="email" />
-                <input class="form-control" name="cpf" placeholder="Informe seu CPF" />
-                <input class="form-control" name="password" placeholder="Senha" type="password" />
-                <input class="form-control" name="password" placeholder="Confirmar senha" type="password" />
-                <label for="">
-                    Data de Nascimento</label>
-                <div class="row">
-                    <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
-                            <option>Dia</option>
-                            <?php for($i=1; $i<=31; $i++){ echo "<option value='$i'>$i</option>";} ?>
-                        </select>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
-                            <option>Mês</option>
-                            <option value="Janeiro">Janeiro</option>
-                            <option value="Fevereiro">Fevereiro</option>
-                            <option value="Março">Março</option>
-                            <option value="Abril">Abril</option>
-                            <option value="Maio">Maio</option>
-                            <option value="Junho">Junho</option>
-                            <option value="Julho">Julho</option>
-                            <option value="Agosto">Agosto</option>
-                            <option value="Setembro">Setembro</option>
-                            <option value="Outubro">Outubro</option>
-                            <option value="Novembro">Novembro</option>
-                            <option value="Dezembro">Dezembro</option>
-                        </select>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                        <select class="form-control">
-                            <option>Ano</option>
-                            <?php $year = date("Y"); while ($year > 1899) {
-                            echo '<option value="'.$year.'">'.$year.'</option>';
-                            $year = $year - '1';}
-                            ?>
-                        </select>
-                    </div>
-                </div>
-                <label class="radio-inline">
-                    <input type="radio" name="sex" id="inlineCheckbox1" value="masculino" />
-                    Masculino
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="sex" id="inlineCheckbox2" value="feminino" />
-                    Feminino
-                </label>
-                <br />
-                <br />
-                <button class="btn btn-lg btn-primary btn-block" type="submit">
-                    Cadastrar</button>
-            </form>
+        </ul>
+
+        <div class="rown">
+            <div id="conteudo2" class="col-md-12" >
+                <?PHP include 'pag/formemailusuario.html'; ?>
+            </div>
         </div>
     </div>
-</div>
 
+</div>
 
 
 
