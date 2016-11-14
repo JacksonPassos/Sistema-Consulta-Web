@@ -18,9 +18,12 @@ switch ($cod){
 		include 'recuperarSenha.html';
 		break;
 	case '105';
-		include 'telaConsulta.html';
+		include 'marcarConsulta.php';
 		break;
 	case '106';
+		include 'telaConsulta.html';
+		break;
+	case '107';
 		include 'verConsulta.html';
 		break;
 }

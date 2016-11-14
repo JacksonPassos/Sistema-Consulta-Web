@@ -1,218 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+	<title>Marcar Consulta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../bootstrap/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="../css/marcarConsulta.css" rel="stylesheet">
 
-<meta charset="ISO-8859-1">
+	<link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-<title>Login</title>
+	<!-- Custom CSS -->
+	<link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-<link href="../css/bootstrap.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" type="text/css" href="../css/index.css">
-<link href="../css/criarLogin.css" rel="stylesheet">
-<link href="../css/stylish-portfolio.css" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link href="../css/stylish-portfolio.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
 
-<!-- Custom Fonts -->
-<link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet"
-	type="text/css">
-<link
-	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-	rel="stylesheet" type="text/css">
-
-<script type="text/javascript" src="../jquery/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="../jquery/jquery-1.5.1.min.js"></script>
-<script type="text/javascript" src="../jquery/jquery-3.1.1.min.js"></script>
-<script src="../script/validator.min.js"></script>
-
+	</script>
 </head>
 <body>
-
-
-	<!-- Navigation -->
-	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i
-		class="fa fa-bars"></i></a>
-	<nav id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<a id="menu-close" href="#"
-				class="btn btn-light btn-lg pull-right toggle"><i
-				class="fa fa-times"></i></a>
-			<li class="sidebar-brand"><a href="#top" onclick=$("#menu-close").click();></a>
-			</li>
-			<li><a href="#top" onclick=$("#menu-close").click();>Menu 01</a></li>
-			<li><a href="#about" onclick=$("#menu-close").click();>Menu 02</a></li>
-			<li><a href="#services" onclick=$("#menu-close").click();>Menu 03</a>
-			</li>
-			<li><a href="#portfolio" onclick=$("#menu-close").click();>Menu 04</a>
-			</li>
-			<li><a href="#contact" onclick=$("#menu-close").click();>Menu 05</a>
-			</li>
-		</ul>
-	</nav>
-
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<div id="topo"><?php include 'topo.php';?></div>
-				<div class="row">
-
-					<div id='menu' class="col-md-10 col-md-push-1 ">
-						<div>MARCA��O DE CONSULTA - MARCAR CONSULTA</div>
-						<ul id="barra_navegacao" class="nav nav-tabs">
-							<li class=""><a onclick="carregar('pag/paginacao.php?cod=100')">Marcacao
-									de Consultas</a></li>
-							<li class=""><a onclick="carregar('pag/paginacao.php?cod=101')">Visualizacao
-									de consultas marcadas</a></li>
-
-						</ul>
-
-						<div class="rown">
-							<div id="conteudo2" class="col-md-12">
-								<div>
-									OL�, USUARIO##<BR>BEM VINDO(A) A MARCA��O DE CONSULTAS..
-								</div>
-								<div class="col-md-7 form-group row">
-									<label name>TELEFONE FIXO:</label> <input type="text" name=""
-										class="form-control"> <label name>TELEFONE CELULAR:</label> <input
-										type="text" name="" class="form-control"> <label name>EMAIL:</label>
-									<input type="text" name="" class="form-control"> <label name>ESTADO:</label>
-									<select class="form-control">
-										<option>Acre - AC</option>
-										<option>Alagoas - AL</option>
-										<option>Amap� - AP</option>
-										<option>Amazonas - AM</option>
-										<option>Bahia - BA</option>
-										<option>Cear� - CE</option>
-										<option>Distrito Federal - DF</option>
-										<option>Esp�rito Santo - ES</option>
-										<option>Goi�s - GO</option>
-										<option>Maranh�o - MA</option>
-										<option>Mato Grosso - MT</option>
-										<option>Mato Grosso do Sul - MS</option>
-										<option>Minas Gerais - MG</option>
-										<option>Par� - PA</option>
-										<option>Para�ba - PB</option>
-										<option>Paran� - PR</option>
-										<option>Pernambuco - PE</option>
-										<option>Piau� - PI</option>
-										<option>Rio de Janeiro - RJ</option>
-										<option>Rio Grande do Norte - RN</option>
-										<option>Rio Grande do Sul - RS</option>
-										<option>Rond�nia - RO</option>
-										<option>Roraima - RR</option>
-										<option>Santa Catarina - SC</option>
-										<option>S�o Paulo - SP</option>
-										<option>Sergipe - SE</option>
-										<option>Tocantins - TO</option>
-									</select>
-								</div>
-								<div class="row" name="">
-									<div class="col-md-5 ">
-										<button type="button" class="btn btn-primary">Trocar usuario</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
+<div class="container">
+	<div class="page-header">
+		<h1>Marcar Consulta</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel with-nav-tabs panel-primary">
+				<div class="panel-heading">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1primary" data-toggle="tab">Marcação de Consulta</a></li>
+						<li><a href="#tab2primary" data-toggle="tab">Visualizar Consultas Marcadas</a></li>
+					</ul>
 				</div>
-				<div id="rodape"><?php include 'rodape.php';?></div>
+				<div class="panel-body">
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="tab1primary">
 
+							<div>
+								OLÁ, Nome do Usuário<BR>BEM VINDO(A) A MARCAÇÃO DE CONSULTAS.
+							</div>
+							<button type="button" class="btn btn-primary pull-right">Trocar usuario</button>
+
+							<div class="col-md-7 form-group row">
+								<label name>TELEFONE FIXO:</label> <input type="text" name=""
+																		  class="form-control"> <label name>TELEFONE CELULAR:</label> <input
+									type="text" name="" class="form-control"> <label name>EMAIL:</label>
+								<input type="text" name="" class="form-control"> <label name>ESTADO:</label>
+								<select class="form-control">
+									<option>Acre - AC</option>
+									<option>Alagoas - AL</option>
+									<option>Amapá - AP</option>
+									<option>Amazonas - AM</option>
+									<option>Bahia - BA</option>
+									<option>Ceará - CE</option>
+									<option>Distrito Federal - DF</option>
+									<option>Espírito Santo - ES</option>
+									<option>Goiás - GO</option>
+									<option>Maranhão - MA</option>
+									<option>Mato Grosso - MT</option>
+									<option>Mato Grosso do Sul - MS</option>
+									<option>Minas Gerais - MG</option>
+									<option>Pará - PA</option>
+									<option>Paraíba - PB</option>
+									<option>Paraná - PR</option>
+									<option>Pernambuco - PE</option>
+									<option>Piauí - PI</option>
+									<option>Rio de Janeiro - RJ</option>
+									<option>Rio Grande do Norte - RN</option>
+									<option>Rio Grande do Sul - RS</option>
+									<option>Rondônia - RO</option>
+									<option>Roraima - RR</option>
+									<option>Santa Catarina - SC</option>
+									<option>São Paulo - SP</option>
+									<option>Sergipe - SE</option>
+									<option>Tocantins - TO</option>
+								</select>
+
+								<label name>ESPECIALIDADE:</label>
+								<select class="form-control">
+									<option>ACUPUNTURA</option>
+									<option>ALERGIA E IMUNOLOGIA</option>
+									<option>ANESTESIOLOGIA</option>
+									<option>ANGIOLOGIA</option>
+									<option>ANGIORRADIOLOGIA E CIRURGIA ENDOVASCULAR</option>
+									<option>CANCEROLOGIA</option>
+									<option>CARDIOLOGIA</option>
+									<option>CARDIOLOGIA PEDIÁTRICA</option>
+									<option> CIRURGIA CARDIOVASCULAR</option>
+									<option>CIRURGIA DA CABEÇA E PESCOÇO</option>
+									<option>CIRURGIA DO APARELHO DIGESTIVO</option>
+									<option>CIRURGIA DO TRAUMA</option>
+									<option>CIRURGIA GERAL</option>
+									<option>CIRURGIA PEDIÁTRICA</option>
+									<option>CIRURGIA PLÁSTICA</option>
+									<option>CIRURGIA TORÁCICA</option>
+									<option>CIRURGIA VASCULAR</option>
+									<option>CIRURGIÃO DENTISTA</option>
+									<option>CLÍNICA MÉDICA</option>
+									<option>COLOPROCTOLOGIA</option>
+									<option>DERMATOLOGIA</option>
+									<option>ECOCARDIOGRAFIA</option>
+									<option>ELETROFISIOLOGIA CLÍNICA INVASIVA</option>
+									<option>ENDOCRINOLOGIA</option>
+									<option> ENDOSCOPIA</option>
+									<option>ENDOSCOPIA DIGESTIVA</option>
+									<option>ERGOMETRIA</option>
+									<option>FISIOTERAPEUTA</option>
+									<option>GASTROENTEROLOGIA</option>
+									<option>GASTROENTEROLOGIA PEDIÁTRICA</option>
+									<option>GENÉTICA MÉDICA</option>
+									<option>GERIATRIA</option>
+									<option>GINECOLOGIA E OBSTETRÍCIA</option>
+									<option>HEMATOLOGIA E HEMOTERAPIA</option>
+									<option>HEMATOLOGIA E HEMOTERAPIA PEDIÁTRICA</option>
+									<option>HEMODINÂMICA E CARDIOLOGIA INTERVENCIONISTA</option>
+									<option>HEPATOLOGIA</option>
+									<option>INFECTOLOGIA</option>
+									<option>INSTRUMENTADOR</option>
+									<option>MASTOLOGIA</option>
+									<option>MEDICINA DE URGÊNCIA</option>
+									<option>MEDICINA DO TRABALHO</option>
+									<option>MEDICINA ESPORTIVA</option>
+									<option>MEDICINA FETAL</option>
+									<option>MEDICINA FÍSICA E REABILITAÇÃO</option>
+									<option>MEDICINA INTENSIVA</option>
+									<option>MEDICINA INTENSIVA PEDIÁTRICA</option>
+									<option>MEDICINA NUCLEAR</option>
+									<option>NEFROLOGIA</option>
+									<option>NEFROLOGIA PEDIÁTRICA</option>
+									<option>NEUROCIRURGIA</option>
+									<option>NEUROFISIOLOGIA CLÍNICA</option>
+									<option>NEUROLOGIA</option>
+									<option>NEURORRADIOLOGIA</option>
+									<option>NUTRIÇÃO PARENTERAL E ENTERAL</option>
+									<option>NUTRICIONISTA</option>
+									<option>NUTROLOGIA</option>
+									<option>OFTALMOLOGIA</option>
+									<option>ORTOPEDIA E TRAUMATOLOGIA</option>
+									<option>OTORRINOLARINGOLOGIA</option>
+									<option>PATOLOGIA</option>
+									<option>PATOLOGIA CLÍNICA/MEDICINA LABORATORIAL</option>
+									<option>PEDIATRIA</option>
+									<option>PNEUMOLOGIA</option>
+									<option>PNEUMOLOGIA PEDIÁTRICA</option>
+									<option>PSIQUIATRIA</option>
+									<option>RADIOLOGIA E DIAGNÓSTICO POR IMAGEM</option>
+									<option> RADIOLOGIA INTERVENCIONISTA E ANGIORRADIOLOGIA</option>
+									<option>RADIOTERAPIA</option>
+									<option>REPRODUÇÃO HUMANA</option>
+									<option>REUMATOLOGIA</option>
+									<option>UROLOGIA</option>
+
+								</select>
+
+							</div>
+
+						</div>
+
+
+
+						<div class="tab-pane fade" id="tab2primary">
+							<div>
+								OLÁ, Nome do Usuário<BR>BEM VINDO(A) A VISUALIZAÇÃO DE CONSULTAS.
+								<button type="button" class="btn btn-primary pull-right">Trocar usuario</button>
+							</div>
+							<div class="form-group">
+								<label for="comment">Consultas Marcadas</label>
+								<textarea class="form-control" rows="5" id="comment"></textarea>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-
-
-
-	<!-- jQuery -->
-	<script src="js/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-        var that = $(this);
-        // Disable the click handler until the user leaves the map area
-        that.off('click', onMapClickHandler);
-        // Enable scrolling zoom
-        that.find('iframe').css("pointer-events", "auto");
-        // Handle the mouse leave event
-        that.on('mouseleave', onMapMouseleaveHandler);
-    }
-    // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
-</script>
 </body>
 </html>
 

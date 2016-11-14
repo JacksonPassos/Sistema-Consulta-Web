@@ -1,6 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-
 #div_pri{
 	height: 650px;
 	
@@ -8,7 +7,6 @@
 	margin-bottom: auto;
 
 }
-
 
 #menu{
 	height: 250px;
@@ -22,8 +20,7 @@
 #conteudo{
 	min-height:205px;
 	background: #eee; 
-	
-	
+
 }
 
 #pag_inter_nav{
@@ -32,3 +29,9 @@
 #nav-tabs-background{
 	background-color: 286090;
 }
+
+
+
+
+
+

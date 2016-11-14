@@ -1,30 +1,44 @@
-<html>
-<head></head>
-<body>
-<div class="row form-group">
-    <form id="formCpfLogin" data-toggle="validator" role="form" action="script/validaLogin.php" method="post">
-        <div class="form-group" style="margin: 5px 5px;">
-            <label class="control-label">Numero do CPF</label> <input
-                name="inputCpf" id="inputCpf" class="form-control"
-                placeholder="Digite o numero do CPF" type="text"
-                data-error="Por favor, informe o numero do CPF sem pontos e tra�os." required>
-            <div class="help-block with-errors"></div>
+
+        <div>
+            OLÁ, Nome do Usuário<BR>BEM VINDO(A) A MARCAÇÃO DE CONSULTAS.
         </div>
-
-        <div class="form-group" style="margin: 5px 5px;">
-            <label for="inputPassword" class="control-label">Data de Nascimento</label> <input
-                name="dNascimento" type="text" class="form-control" id="inputPassword"
-                placeholder="Digite sua Data de Nascimento" data-minlength="6" required>
-            <span class="help-block"> Sem a utilizacao de barras (/)</span>
+        <div class="col-md-7 form-group row">
+            <label name>TELEFONE FIXO:</label> <input type="text" name=""
+                                                      class="form-control"> <label name>TELEFONE CELULAR:</label> <input
+                type="text" name="" class="form-control"> <label name>EMAIL:</label>
+            <input type="text" name="" class="form-control"> <label name>ESTADO:</label>
+            <select class="form-control">
+                <option>Acre - AC</option>
+                <option>Alagoas - AL</option>
+                <option>Amap� - AP</option>
+                <option>Amazonas - AM</option>
+                <option>Bahia - BA</option>
+                <option>Cear� - CE</option>
+                <option>Distrito Federal - DF</option>
+                <option>Esp�rito Santo - ES</option>
+                <option>Goi�s - GO</option>
+                <option>Maranh�o - MA</option>
+                <option>Mato Grosso - MT</option>
+                <option>Mato Grosso do Sul - MS</option>
+                <option>Minas Gerais - MG</option>
+                <option>Par� - PA</option>
+                <option>Para�ba - PB</option>
+                <option>Paran� - PR</option>
+                <option>Pernambuco - PE</option>
+                <option>Piau� - PI</option>
+                <option>Rio de Janeiro - RJ</option>
+                <option>Rio Grande do Norte - RN</option>
+                <option>Rio Grande do Sul - RS</option>
+                <option>Rond�nia - RO</option>
+                <option>Roraima - RR</option>
+                <option>Santa Catarina - SC</option>
+                <option>S�o Paulo - SP</option>
+                <option>Sergipe - SE</option>
+                <option>Tocantins - TO</option>
+            </select>
         </div>
-
-        <a href="pag/marcarConsulta.html"><button type="submit" class="btn btn-primary" style="margin-left: 5px;">Entrar</button></a>
-        <a href="pag/paginacao.php?cod=103"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
-        <a href="pag/paginacao.php?cod=104"><button type="button" class="btn btn-primary">Esqueci minha senha</button></a>
-        <input type=hidden name=form value="3">
-    </form>
-</div>
-
-
-</body>
-</html>
+        <div class="row" name="">
+            <div class="col-md-5 ">
+                <button type="button" class="btn btn-primary">Trocar usuario</button>
+            </div>
+        </div>

@@ -3,8 +3,8 @@
 <head>
 
 <?php 
-include '../script/ConBanco.php';
-conectaBaco();
+//include '../script/ConBanco.php';
+//conectaBaco();
 
 ?>
     <meta charset="utf-8">

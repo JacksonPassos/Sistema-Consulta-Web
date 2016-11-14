@@ -19,19 +19,19 @@ function login1() {
 <<<<<<< HEAD
 	echo "conectando com o banco de dados 01";
 	$inputEmail 	= $_POST['inputEmail'];
-	include 'marcarConsulta.html';
+	include 'marcarConsulta.php';
 	$inputPassword 	= $_POST['inputPassword'];
 	echo $inputEmail." ".$inputPassword;
 }
 function login2() {
 	echo "conectando com o banco de dados 02";
-	include 'marcarConsulta.html';
+	include 'marcarConsulta.php';
 	$inputCarteira	= $_POST['inputCarteira'];
 	$dNascimento	= $_POST['dNascimento'];
 }
 function login3() {
 	echo "conectando com o banco de dados 03";
-	include 'marcarConsulta.html';
+	include 'marcarConsulta.php';
 	$inputCpf 		= $_POST['inputCpf'];
 	$dNascimento	= $_POST['dNascimento'];
 
